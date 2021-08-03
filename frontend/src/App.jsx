@@ -4,7 +4,7 @@ import { Header } from './components/dumb/Header';
 // import {Login} from './containers/Login';
 // import {Profil} from './containers/Profil';
 // import {Error} from './containers/Error';
-// import {Footer} from './components/dumb/Footer';
+import { Footer } from './components/dumb/Footer';
 import './App.css';
 
 function App() {
@@ -27,7 +27,7 @@ function App() {
                         <Route path="/">{/* <Error code="404" /> */}</Route>
                     </Switch>
                 </main>
-                {/* <Footer /> */}
+                <Footer />
             </Router>
         </div>
     );
