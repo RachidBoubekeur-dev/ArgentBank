@@ -5,8 +5,8 @@ import './footer.css';
  */
 export const Footer = () => {
     return (
-        <footer class="footer">
-            <p class="footer-text">
+        <footer className="footer">
+            <p className="footer-text">
                 Copyright {new Date().getFullYear()} Argent Bank
             </p>
         </footer>
