@@ -28,13 +28,13 @@ const FeatureItem = (feature = 'chat') => {
     };
 
     return (
-        <div class="feature-item">
+        <div className="feature-item">
             <img
                 src={arrayFeature.feature.icon}
                 alt={`${feature} icon`}
-                class="feature-icon"
+                className="feature-icon"
             />
-            <h3 class="feature-item-title">{arrayFeature.feature.title}</h3>
+            <h3 className="feature-item-title">{arrayFeature.feature.title}</h3>
             <p>{arrayFeature.feature.text}</p>
         </div>
     );
