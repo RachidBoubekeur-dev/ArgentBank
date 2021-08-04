@@ -1,9 +1,5 @@
 import { HeroContent } from '../../components/dumb/HeroContent';
-<<<<<<< develop
 import FeatureItem from '../../components/dumb/FeatureItem';
-=======
-// import { FeatureItem } from '../../components/dumb/FeatureItem';
->>>>>>> :hammer: add HeroContent component dump in container Home
 import './home.css';
 
 export const Home = () => {
