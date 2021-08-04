@@ -8,7 +8,8 @@ import './featureItem.css';
  *  FeatureItem component dump
  * @param {String} feature required wait chat, money or security default is chat.
  */
-const FeatureItem = (feature = 'chat') => {
+const FeatureItem = (params = 'chat') => {
+    const { feature } = params;
     const arrayFeature = {
         chat: {
             icon: iconChat,
@@ -26,16 +27,17 @@ const FeatureItem = (feature = 'chat') => {
             text: 'We use top of the line encryption to make sure your data and money is always safe.',
         },
     };
-
     return (
         <div className="feature-item">
             <img
-                src={arrayFeature.feature.icon}
+                src={arrayFeature[feature].icon}
                 alt={`${feature} icon`}
                 className="feature-icon"
             />
-            <h3 className="feature-item-title">{arrayFeature.feature.title}</h3>
-            <p>{arrayFeature.feature.text}</p>
+            <h3 className="feature-item-title">
+                {arrayFeature[feature].title}
+            </h3>
+            <p>{arrayFeature[feature].text}</p>
         </div>
     );
 };

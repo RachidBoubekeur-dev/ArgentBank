@@ -1,6 +1,5 @@
 import { HeroContent } from '../../components/dumb/HeroContent';
 import FeatureItem from '../../components/dumb/FeatureItem';
-import './home.css';
 
 export const Home = () => {
     const arrayItem = ['chat', 'money', 'security'];
