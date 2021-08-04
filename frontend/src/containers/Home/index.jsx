@@ -1,5 +1,6 @@
 import { HeroContent } from '../../components/dumb/HeroContent';
 import FeatureItem from '../../components/dumb/FeatureItem';
+import './home.css';
 
 export const Home = () => {
     const arrayItem = ['chat', 'money', 'security'];
@@ -10,7 +11,7 @@ export const Home = () => {
             </div>
             <div className="features">
                 <h2 className="sr-only">Features</h2>
-                {arrayItem.map(({ feature }, index) => (
+                {arrayItem.map((feature, index) => (
                     <FeatureItem key={index} feature={feature} />
                 ))}
             </div>
