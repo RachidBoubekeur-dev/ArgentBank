@@ -3,7 +3,6 @@ import FeatureItem from '../../components/dumb/FeatureItem';
 import './home.css';
 
 export const Home = () => {
-    window.document.title = 'Argent Bank - Home Page';
     const arrayItem = ['chat', 'money', 'security'];
     return (
         <section>
