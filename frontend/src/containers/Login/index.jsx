@@ -2,5 +2,5 @@
 import './login.css';
 
 export const Login = () => {
-    return <section class="sign-in-content">{/* <FormLogin /> */}</section>;
+    return <section className="sign-in-content">{/* <FormLogin /> */}</section>;
 };
