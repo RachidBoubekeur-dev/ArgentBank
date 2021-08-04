@@ -1,6 +1,10 @@
-// import FormLogin from '../../components/smart/FormLogin';
+import { FormSignIn } from '../../components/smart/FormSignIn';
 import './login.css';
 
 export const Login = () => {
-    return <section className="main bg-dark">{/* <FormLogin /> */}</section>;
+    return (
+        <section className="main bg-dark">
+            <FormSignIn />
+        </section>
+    );
 };
