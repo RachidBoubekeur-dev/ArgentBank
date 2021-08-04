@@ -2,5 +2,5 @@
 import './login.css';
 
 export const Login = () => {
-    return <section className="sign-in-content">{/* <FormLogin /> */}</section>;
+    return <section className="main bg-dark">{/* <FormLogin /> */}</section>;
 };

@@ -1,8 +1,7 @@
-.sign-in-content {
-    box-sizing: border-box;
-    background-color: white;
-    width: 300px;
-    margin: 0 auto;
-    margin-top: 3rem;
-    padding: 2rem;
+.main {
+    flex: 1;
+}
+
+.bg-dark {
+    background-color: #12002b;
 }
