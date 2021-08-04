@@ -1,5 +1,8 @@
 import './heroContent.css';
 
+/**
+ *  HeroContent component dump
+ */
 export const HeroContent = () => {
     return (
         <div className="hero-content">
