@@ -14,16 +14,15 @@ function App() {
                 <Header />
                 <main>
                     <Switch>
-                        <Route path="/" exact>
-                            <Home />
-                        </Route>
                         <Route path="/login" exact>
                             <Login />
                         </Route>
                         <Route path="/profile" exact>
                             <Profile />
                         </Route>
-                        <Route path="/">{/* <Error code="404" /> */}</Route>
+                        <Route path="/">
+                            <Home />
+                        </Route>
                     </Switch>
                 </main>
                 <Footer />
