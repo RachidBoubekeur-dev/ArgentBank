@@ -3,7 +3,6 @@ import { Header } from './components/dumb/Header';
 import { Home } from './containers/Home';
 import { Login } from './containers/Login';
 import { Profile } from './containers/Profile';
-// import {Error} from './containers/Error';
 import { Footer } from './components/dumb/Footer';
 import './App.css';
 
