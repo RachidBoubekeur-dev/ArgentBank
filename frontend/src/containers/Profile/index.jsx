@@ -2,6 +2,9 @@ import { WelcomeProfile } from '../../components/smart/WelcomeProfile';
 import { Account } from '../../components/smart/Account';
 import './profile.css';
 
+/**
+ *  Profile container
+ */
 export const Profile = () => {
     return (
         <section className="main bg-dark">
