@@ -1,5 +1,5 @@
 import { WelcomeProfile } from '../../components/smart/WelcomeProfile';
-// import { Account } from '../../components/smart/Account';
+import { Account } from '../../components/smart/Account';
 import './profile.css';
 
 export const Profile = () => {
@@ -7,7 +7,7 @@ export const Profile = () => {
         <section class="main bg-dark">
             <WelcomeProfile />
             <h2 class="sr-only">Accounts</h2>
-            {/* <Account /> */}
+            <Account />
         </section>
     );
 };
