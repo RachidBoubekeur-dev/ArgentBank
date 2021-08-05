@@ -4,9 +4,9 @@ import './profile.css';
 
 export const Profile = () => {
     return (
-        <section class="main bg-dark">
+        <section className="main bg-dark">
             <WelcomeProfile />
-            <h2 class="sr-only">Accounts</h2>
+            <h2 className="sr-only">Accounts</h2>
             <Account />
         </section>
     );

@@ -2,7 +2,7 @@ import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 import { Header } from './components/dumb/Header';
 import { Home } from './containers/Home';
 import { Login } from './containers/Login';
-// import {Profil} from './containers/Profil';
+import { Profile } from './containers/Profile';
 // import {Error} from './containers/Error';
 import { Footer } from './components/dumb/Footer';
 import './App.css';
@@ -21,7 +21,7 @@ function App() {
                             <Login />
                         </Route>
                         <Route path="/profile" exact>
-                            {/* <Profil /> */}
+                            <Profile />
                         </Route>
                         <Route path="/">{/* <Error code="404" /> */}</Route>
                     </Switch>

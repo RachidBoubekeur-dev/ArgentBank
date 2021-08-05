@@ -10,3 +10,7 @@
     color: #fff;
     margin-bottom: 2rem;
 }
+
+.header > h1 {
+    font-size: 2em;
+}
