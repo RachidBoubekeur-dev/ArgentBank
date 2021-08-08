@@ -38,6 +38,8 @@ const userSlice = createSlice({
     },
 });
 
+export const userSelector = ({ state }) => state.user;
+
 export const { profile, update, logout } = userSlice.actions;
 
 export default userSlice.reducer;

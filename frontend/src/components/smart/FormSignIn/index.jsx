@@ -24,7 +24,7 @@ export const FormSignIn = () => {
     const SetUserData = (userData) => {
         dispatch(profile({ ...userData }));
         remember &&
-            localStorage.setItem('user', JSON.stringify({ ...userData }));
+            localStorage.setItem('token', JSON.stringify(userData.token));
         history.push('/profile');
     };
 
