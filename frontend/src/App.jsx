@@ -1,5 +1,5 @@
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
-import { Header } from './components/dumb/Header';
+import { Header } from './components/smart/Header';
 import { Home } from './containers/Home';
 import { Login } from './containers/Login';
 import { Profile } from './containers/Profile';
