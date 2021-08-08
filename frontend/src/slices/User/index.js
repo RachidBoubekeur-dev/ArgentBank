@@ -24,21 +24,12 @@ const userSlice = createSlice({
             state.user = { ...action.payload };
         },
         logout: (state) => {
-            state.user = {
-                id: null,
-                email: null,
-                firstName: null,
-                lastName: null,
-                token: null,
-                createdAt: null,
-                updatedAt: null,
-                status: 'disconnect',
-            };
+            state.user = { ...initialState.user };
         },
     },
 });
 
-export const userSelector = ({ state }) => state.user;
+export const userSelector = ({ user }) => user;
 
 export const { profile, update, logout } = userSlice.actions;
 

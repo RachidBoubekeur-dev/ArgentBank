@@ -51,12 +51,13 @@ function App() {
         } else {
             verifTokenValid();
         }
+        // eslint-disable-next-line
     }, [userData]);
 
     return (
         <div>
             <Router>
-                <Header />
+                <Header isConnect={connect} />
                 <main>
                     <Switch>
                         {connect ? (
