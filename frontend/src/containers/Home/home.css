@@ -1,0 +1,23 @@
+.hero {
+    background-image: url('../../assets/bank-tree.jpeg');
+    background-position: 0 -50px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 300px;
+    position: relative;
+}
+
+.features {
+    display: flex;
+    flex-direction: column;
+}
+
+@media (min-width: 920px) {
+    .hero {
+        height: 400px;
+        background-position: 0% 33%;
+    }
+    .features {
+        flex-direction: row;
+    }
+}
