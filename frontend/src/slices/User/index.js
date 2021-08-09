@@ -20,9 +20,6 @@ const userSlice = createSlice({
         profile: (state, action) => {
             state.user = { ...action.payload };
         },
-        update: (state, action) => {
-            state.user = { ...action.payload };
-        },
         logout: (state) => {
             state.user = { ...initialState.user };
         },
@@ -31,6 +28,6 @@ const userSlice = createSlice({
 
 export const userSelector = ({ user }) => user;
 
-export const { profile, update, logout } = userSlice.actions;
+export const { profile, logout } = userSlice.actions;
 
 export default userSlice.reducer;

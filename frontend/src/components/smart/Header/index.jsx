@@ -5,7 +5,7 @@ import { logout } from '../../../slices/User';
 import './header.css';
 
 /**
- *  Header component dump - this component allows navigation on the application.
+ *  Header component smart - this component allows navigation on the application.
  */
 export const Header = (props) => {
     const name = useSelector((state) => state.user);

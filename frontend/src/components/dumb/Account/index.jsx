@@ -1,7 +1,7 @@
 import './account.css';
 
 /**
- *  Account component smart
+ *  Account component dumb
  */
 export const Account = () => {
     return (

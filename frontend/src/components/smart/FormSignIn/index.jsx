@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { useRef, useState } from 'react';
 import Axios from '../../../services/Axios';
 import { useDispatch } from 'react-redux';
 import { profile } from '../../../slices/User';
@@ -10,9 +10,9 @@ import './formSignIn.css';
  *  login form
  */
 export const FormSignIn = () => {
-    const [email, setEmail] = useState('');
-    const [password, setPassword] = useState('');
-    const [remember, setRemember] = useState(false);
+    const email = useRef();
+    const password = useRef();
+    const remember = useRef();
     const [error, setError] = useState(false);
     const dispatch = useDispatch();
     const history = useHistory();
@@ -23,7 +23,7 @@ export const FormSignIn = () => {
      */
     const SetUserData = (userData) => {
         dispatch(profile({ ...userData }));
-        remember &&
+        remember.current.checked &&
             localStorage.setItem('token', JSON.stringify(userData.token));
         history.push('/profile');
     };
@@ -31,14 +31,14 @@ export const FormSignIn = () => {
     const SignInSubmit = (e) => {
         e.preventDefault();
         const dataForm = {
-            email: email,
-            password: password,
+            email: email.current.value,
+            password: password.current.value,
         };
         Axios('login', dataForm)
             .then((userData) => {
                 SetUserData(userData);
             })
-            .catch((err) => {
+            .catch(() => {
                 setError(true);
             });
     };
@@ -55,28 +55,19 @@ export const FormSignIn = () => {
             <form onSubmit={SignInSubmit}>
                 <div className="input-wrapper">
                     <label htmlFor="username">Email</label>
-                    <input
-                        type="email"
-                        id="email"
-                        onChange={(e) => setEmail(e.target.value)}
-                        required
-                    />
+                    <input type="email" id="email" ref={email} required />
                 </div>
                 <div className="input-wrapper">
                     <label htmlFor="password">Password</label>
                     <input
                         type="password"
                         id="password"
-                        onChange={(e) => setPassword(e.target.value)}
+                        ref={password}
                         required
                     />
                 </div>
                 <div className="input-remember">
-                    <input
-                        type="checkbox"
-                        id="remember-me"
-                        onChange={(e) => setRemember(e.target.checked)}
-                    />
+                    <input type="checkbox" id="remember-me" ref={remember} />
                     <label htmlFor="remember-me">Remember me</label>
                 </div>
                 <input

@@ -1,5 +1,5 @@
 import { WelcomeProfile } from '../../components/smart/WelcomeProfile';
-import { Account } from '../../components/smart/Account';
+import { Account } from '../../components/dumb/Account';
 import './profile.css';
 
 /**

@@ -28,7 +28,8 @@ const Axios = (action, dataForm = {}, token = '') => {
                 .then((res) => {
                     const userData = {
                         ...res.data.body,
-                        ...dataForm,
+                        token,
+                        status: 'connect',
                     };
                     resolve(userData);
                 })
