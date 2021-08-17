@@ -21,3 +21,17 @@
         flex-direction: row;
     }
 }
+
+@media (min-height: 900px) {
+    .hero {
+        height: 600px;
+        background-position: 0% 33%;
+    }
+}
+
+@media (min-height: 1100px) {
+    .hero {
+        height: 800px;
+        background-position: 0% 33%;
+    }
+}

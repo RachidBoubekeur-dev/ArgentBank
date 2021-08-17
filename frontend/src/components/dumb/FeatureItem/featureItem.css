@@ -16,3 +16,23 @@
     font-weight: bold;
     margin-bottom: 0.5rem;
 }
+
+@media screen and (min-height: 1500px) {
+    .feature-item {
+        padding: 5.5rem;
+    }
+
+    .feature-icon {
+        width: 155px;
+        padding: 2rem;
+    }
+
+    .feature-item-title {
+        font-size: 2.25rem;
+        margin-bottom: 1.5rem;
+    }
+
+    .feature-item > p {
+        font-size: 3em;
+    }
+}

@@ -1,5 +1,6 @@
 .main-nav {
     display: flex;
+    flex-direction: column;
     justify-content: space-between;
     align-items: center;
     padding: 5px 20px;
@@ -31,4 +32,24 @@
 .main-nav-logo-image {
     max-width: 100%;
     width: 200px;
+}
+
+@media screen and (min-width: 558px) {
+    .main-nav {
+        flex-direction: row;
+    }
+}
+
+@media screen and (min-height: 1500px) {
+    .main-nav {
+        padding: 25px 20px;
+    }
+
+    .main-nav-item {
+        font-size: 2em;
+    }
+
+    .main-nav-logo-image {
+        width: 300px;
+    }
 }

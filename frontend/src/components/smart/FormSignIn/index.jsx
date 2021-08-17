@@ -12,7 +12,6 @@ import './formSignIn.css';
 export const FormSignIn = () => {
     const email = useRef();
     const password = useRef();
-    const remember = useRef();
     const [error, setError] = useState(false);
     const dispatch = useDispatch();
     const history = useHistory();
@@ -23,8 +22,7 @@ export const FormSignIn = () => {
      */
     const SetUserData = (userData) => {
         dispatch(profile({ ...userData }));
-        remember.current.checked &&
-            localStorage.setItem('token', JSON.stringify(userData.token));
+        localStorage.setItem('token', JSON.stringify(userData.token));
         history.push('/profile');
     };
 
@@ -67,7 +65,7 @@ export const FormSignIn = () => {
                     />
                 </div>
                 <div className="input-remember">
-                    <input type="checkbox" id="remember-me" ref={remember} />
+                    <input type="checkbox" id="remember-me"/>
                     <label htmlFor="remember-me">Remember me</label>
                 </div>
                 <input

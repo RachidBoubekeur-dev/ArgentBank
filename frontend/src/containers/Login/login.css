@@ -1,9 +1,22 @@
 .main {
     flex: 1;
     display: flex;
-    min-height: 78vh;
+    flex-direction: column;
+    min-height: 81vh;
 }
 
 .bg-dark {
     background-color: #12002b;
+}
+
+@media screen and (min-height: 850px) {
+    .main {
+        height: 85vh;
+    }
+}
+
+@media screen and (min-height: 1800px) {
+    .main {
+        height: 87.5vh;
+    }
 }

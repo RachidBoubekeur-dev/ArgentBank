@@ -43,3 +43,17 @@
     padding: 5px;
     font-size: 1.2rem;
 }
+
+@media screen and (min-width: 1440px) {
+    .sign-in-content {
+        margin-top: 6rem;
+        transform: scale(1.1);
+    }   
+}
+
+@media screen and (min-width: 2250px) {
+    .sign-in-content {
+        margin-top: 22rem;
+        transform: scale(2.3);
+    }   
+}
